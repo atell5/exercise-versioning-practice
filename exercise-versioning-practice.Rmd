@@ -1,0 +1,67 @@
+---
+title: "Practice Versioning"
+author: "ADD YOUR NAME"
+date: "2026-01-26"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Practice Versioning
+
+Complete the following five code chunks to complete a mini-analysis.  
+
+Stage, commit, and push versions of the analysis after:
+1. Completing it for the first time such that it knits successfuly (set eval = T first), add name to YAML
+2. Changing the plot variable (y mapping) and associated text narrative
+3. Creating a bug in the code that causes a problem during knitting (but before you fix it)
+4. Fixing the bug and confirming the fix with a commit message
+5. Polishing the code by adding unique chunk labels and improving use of headers, bold, italics, etc. and polish the figure
+
+
+Step 1. Load Libraries
+
+Load the tidyverse and palmerpenguins datasets
+
+```{r eval = F}
+library(tidyverse)
+library(___)
+```
+
+Step 2. Glimpse the dataset object `penguins`
+
+```{r eval = F}
+___(penguins)
+```
+
+Step 3. Plot the variable `flipper_length_mm` against species using a box plot
+
+```{r eval = F}
+___ %>%
+  ggplot(aes(
+    x = ___,
+    y = ___,
+  )) +
+  geom_boxplot() +
+  theme_classic()
+```
+
+Step 4. Create a new variable called `flipper_length_cm`
+
+```{r eval = F}
+___ %>%
+  mutate(___ = flipper_length_mm / 10)
+```
+
+Step 5. Assign the table including the new variable to an object called `penguins_cm`
+
+```{r eval = F}
+penguins_cm ___ ___ %>%
+  mutate(___ = flipper_length_mm / 10)
+```
+
+
+
+
