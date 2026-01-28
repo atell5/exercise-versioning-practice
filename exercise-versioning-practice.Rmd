@@ -1,5 +1,5 @@
 ---
-title: "Practice Versioning"
+title: "Practice Versioning (Forked Version)"
 author: "ADD YOUR NAME"
 date: "2026-01-26"
 output: html_document
@@ -8,8 +8,6 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-## Practice Versioning
 
 Complete the following five code chunks to complete a mini-analysis.  
 
